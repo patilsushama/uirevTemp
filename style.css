@@ -1,0 +1,310 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container
+{
+  width:100%;
+  min-height:300px;
+  border:1px solid black;
+  
+
+}
+.header
+{
+  display:flex;
+  
+  width:100%;
+ min-height:50px;
+  border:1px solid black;
+  background-color: black;
+}
+.header .logo
+{
+    width:25%;
+
+    border:1px solid black;
+    min-height:auto;
+}
+.logo h2{
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 10px;
+    color:white;
+}
+.header .menu
+{
+    width:30%;
+    border:1px solid black;
+    min-height:auto;
+margin-left:45%;
+}
+.menu ul{
+    list-style:none;
+}
+.menu ul li{
+    margin-top:20px;
+    display:inline-block;
+
+}
+.menu ul li a
+{
+    color:white;
+    text-decoration: none;
+    padding:10px;
+   
+}
+.menu ul li a:hover
+{
+    background-color: lightgray;
+    border-radius:15px;
+    color:black;
+}
+ .slider
+{
+    display:flex;
+    width:100%;
+    min-height:300px;
+    border:1px solid black;
+    background-image:url("../IMAGES/s.png");
+    background-size: 100% 100%;
+}
+.slider h1
+{
+    font-size:4em;
+    margin-top:7%;
+   margin-left:15%;
+}
+.slider h2
+{
+    font-size:2em;
+    margin-top:14%;
+    margin-left:-100px;
+   
+}
+.midslider
+{
+    display:flex;
+    width:100%;
+    min-height:50px;
+  
+}
+.midslider .first
+{
+    width:30%;
+}
+.first .b
+{
+    padding:15px 60px;
+    border-radius: 10px;
+    margin-top:5px;
+    background-color:white;
+    margin-left:5%;
+    border:1px solid gray;
+    cursor: pointer;
+}
+.midslider .second
+{
+    width:40%;
+    margin-left:30%;
+    
+}
+.second ul
+{
+    list-style: none;
+    
+}
+.second ul li{
+    padding:5px;
+    margin-top:10px;
+    display:inline-block;
+  
+}
+.second ul li a
+{
+   color:black;
+    text-decoration: none;
+    padding:10px;
+}
+.second ul li a:hover
+{
+   border:1px solid black;
+   border-radius:10px;
+    color:black;
+    
+}
+.slider2
+{
+    display:flex;
+    margin-top:2%;
+    width:100%;
+    min-height:300px;
+   
+    justify-content: space-around;
+}
+.slider2 .box
+{
+    width:23%;
+    min-height: auto;
+   
+    display:flex;
+    flex-direction: column;
+}
+.box .b1
+{
+    width:100%;
+    min-height:80%;
+   
+}
+.b1 h1
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+.b1 img
+{
+    width:100%;
+    min-height:80%;
+}
+.box .b2
+{
+    width:100%;
+    min-height:20%;
+  
+    display:flex;
+}
+.b2 .price
+{
+    width:50%;
+   min-height:auto;
+
+}
+.price h2
+{
+    font-size:2em;
+    margin-top:5%;
+    margin-left:5%;
+}
+.b2 .but
+{
+    width:50%;
+   min-height:auto;
+
+}
+.but #s1
+{
+    padding:10px 30px;
+    background-color: black;
+    border-radius: 10px;
+    color:white;
+    margin-top:5%;
+    margin-left:15%;
+}
+.footer
+{
+    width:100%;
+    background-color: black;
+    color:white;
+    min-height:50px;
+    text-align: center;
+    padding-top:2%;
+}
+
+@media only screen and (max-width:500px)
+{
+   
+  .container
+  {
+    width:100%;
+    flex-direction:column;
+
+  }
+  .header{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+
+  }
+  .header .menu
+  {
+    margin-left:-2%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 5%;
+  }
+  .slider
+  {
+    width:100%;
+    margin-bottom:5%;
+  }
+  .slider h2
+  {
+    margin-top:20%;
+  }
+  .menu ul li 
+  {
+    width:100%;
+  }
+  .header .logo{
+    width:100%;
+    margin-bottom: 5%;
+  }
+  .logo h2
+  {
+    margin-left:-60%;
+  }
+
+  .midslider
+  {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+  }
+  .minslider .second
+  {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+   
+  }
+  .second ul li
+  {
+    width:100%;
+    margin-bottom:5%;
+  }
+  .second ul li a
+  {
+    margin-left:-65%;
+   
+  }
+  .minslider .first
+  {
+    width:100%;
+    margin-bottom:5%;
+  }
+  .first .b
+  {
+   
+   margin-bottom:5%;
+  }
+  .slider2
+  {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:5%;
+  }
+  .slider2 .box
+  {
+    width:100%;
+    margin-bottom:10%;
+  }
+  .footer
+  {
+    width:100%;
+  }
+}
