@@ -68,7 +68,7 @@ margin-left:45%;
     width:100%;
     min-height:300px;
     border:1px solid black;
-    background-image:url("../IMAGES/s.png");
+    background-image:url("IMAGES/s.png");
     background-size: 100% 100%;
 }
 .slider h1
